@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+nav {
+    background-color: #b22222;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(to right, #b22222, #ff6347);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+.tree-container {
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.main-box {
+    width: 300px;
+    margin: auto;
+}
+
+.line {
+    width: 5px;
+    height: 50px;
+    background-color: #b22222;
+    margin: auto;
+}
+
+.branch-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tree-box {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    width: 220px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.tree-box h2,
+.tree-box h3 {
+    color: #b22222;
+    margin-bottom: 10px;
+}
+
+.content-section {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 50px 20px;
+}
+
+.card {
+    background-color: white;
+    width: 450px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+    color: #b22222;
+    margin-bottom: 20px;
+}
+
+.card p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+
+    .content-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .branch-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
